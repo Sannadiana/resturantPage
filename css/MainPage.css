@@ -1,0 +1,143 @@
+/****************
+****** BANNER *****
+*****************/
+
+#page-banner {
+    background-image: url(../images/mainpage/BannerImg.jpg);
+}
+
+
+/*************************
+**** PRODUCT CATEGORIES****
+**************************/
+
+#Gourmet,
+#FastFood,
+#Sale {
+    height: 350px;
+    background-size: cover;
+    color: #A68626;
+    text-shadow: 5px 5px 5px black;
+    font-weight: bolder;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px #11110F;
+    font-family: 'Cinzel';
+    border-bottom-left-radius: 4rem;
+    border-top-right-radius: 4rem;
+}
+
+
+/*************************
+**** PRODUCT CONTAINER****
+**************************/
+
+.product-container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "BoxGourmet BoxFastfood BoxSale"
+}
+
+
+
+
+
+#Gourmet {
+    background-image: url(../images/mainpage/gourmet.jpg);
+    grid-area: g;
+}
+
+#FastFood {
+    background-image: url(../images/mainpage/Fastfood.jpg);
+    grid-area: f;
+}
+
+#Sale {
+    background-image: url(../images/Sale/Fruts.jpg);
+    grid-area: s;
+}
+
+
+
+
+
+
+
+/********************
+******* PHONE ********
+**********************/
+
+@media (max-width: 500px) {
+
+    .product-container {
+        grid: auto-flow / repeat(1, 1fr);
+        grid-template-areas: "g""f""s";
+    }
+
+    #Gourmet,
+    #FastFood,
+    #Sale {
+        height: 150px;
+    }
+}
+
+/********************
+******* TABLET  ******
+**********************/
+
+@media (min-width: 500px) and (max-width: 978px) {
+
+    .product-container {
+        grid: auto-flow / repeat(2, 1fr);
+        grid-template-rows: 2;
+        grid-template-areas: "g f"
+            "s s";
+    }
+
+    #Gourmet,
+    #FastFood,
+    #Sale {
+        height: 250px;
+    }
+}
+
+
+
+/********************
+******* LAPTOP  ******
+**********************/
+
+@media (min-width: 978px) and (max-width : 1200px) {
+
+    .product-container {
+        grid: auto-flow / repeat(3, 1fr);
+        grid-template-areas: "g f s"
+    }
+
+    #Gourmet,
+    #FastFood,
+    #Sale {
+        height: 750px;
+    }
+
+
+}
+
+
+/********************
+******* DESKTOP ******
+**********************/
+
+@media (min-width: 1200px) {
+
+    .product-container {
+        grid: auto-flow / repeat(2, 1fr);
+        grid-template-areas: "g g"
+            "f s"
+    }
+
+    #Gourmet,
+    #FastFood,
+    #Sale {
+        height: 350px;
+    }
+
+}

@@ -1,0 +1,147 @@
+/****************
+****** BANNER *****
+*****************/
+
+#page-banner {
+    background-image: url(../images/gourmet/Bacon.jpg);
+}
+
+
+
+/*************************
+**** PRODUCT CONTAINER****
+**************************/
+
+.product-container {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 2;
+    grid-template-areas: "box1 box2 box3"
+        "box4 box4 box4"
+}
+
+
+/*************************
+**** PRODUCT CATEGORIES****
+**************************/
+
+#KingPrawn,
+#Sushi,
+#TenderloinBeef,
+#Fish {
+    text-align: center;
+    height: 350px;
+    background-size: cover;
+    color: #A68626;
+    font-weight: bolder;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px #11110F;
+    font-family: 'Cinzel';
+    border-bottom-left-radius: 4rem;
+    border-top-right-radius: 4rem;
+}
+
+
+
+#KingPrawn {
+    background-image: url(../images/gourmet/kingPrawn.jpg);
+    grid-area: box1;
+}
+
+#Sushi {
+    background-image: url(../images/gourmet/Sushi.jpg);
+    grid-area: box2;
+
+}
+
+#Fish {
+    background-image: url(../images/gourmet/fish.jpg);
+    grid-area: box3;
+
+}
+
+#TenderloinBeef {
+    background-image: url(../images/gourmet/tenderloin%20Beef.jpg);
+    grid-area: box4;
+
+}
+
+
+
+
+
+
+
+
+
+/********************
+******* PHONE ********
+**********************/
+
+@media (max-width: 500px) {
+
+    .product-container {
+        grid: auto-flow / repeat(1, 1fr);
+        grid-template-rows: ;
+        grid-template-areas:
+            "box1""box2"
+            "box3""box4"
+    }
+
+    #KingPrawn,
+    #Sushi,
+    #TenderloinBeef,
+    #Fish {
+        height: 150px;
+    }
+}
+
+
+/********************
+******* TABLET  ******
+**********************/
+
+@media (min-width: 500px) and (max-width: 978px) {
+
+    .product-container {
+        grid: auto-flow / repeat(2, 1fr);
+        grid-template-rows: 2;
+        grid-template-areas:
+            "box1 box2"
+            "box3 box4"
+    }
+}
+
+
+/********************
+******* LAPTOP  ******
+**********************/
+
+@media (min-width: 978px) and (max-width : 1200px) {
+
+    .product-container {
+        grid: auto-flow / repeat(3, 1fr);
+        grid-template-rows: 2;
+        grid-template-areas: "box1 box2 box3"
+            "box4 box4 box4"
+
+
+    }
+}
+
+
+/********************
+******* DESKTOP ******
+**********************/
+
+@media (min-width: 1200px) {
+
+    .product-container {
+        grid: auto-flow / repeat(3, 1fr);
+        grid-template-rows: 2;
+        grid-template-areas: "box4 box4 box4"
+            "box1 box2 box3"
+
+    }
+
+
+}

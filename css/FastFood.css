@@ -1,0 +1,152 @@
+/****************
+****** BANNER *****
+*****************/
+
+#page-banner {
+    background-image: url(../images/mainpage/Fastfood.jpg);
+}
+
+
+
+/*************************
+**** PRODUCT CONTAINER****
+**************************/
+
+.product-container {
+    grid-template-areas: "box1 box2 box3 box4 box5 box6"
+}
+
+
+/*************************
+**** PRODUCT CATEGORIES****
+**************************/
+
+#SweetPotato,
+#PotatoFries,
+#CheesBurger,
+#PlaneBurger,
+#Kebab,
+#Gyros {
+    text-align: center;
+    height: 350px;
+    background-size: cover;
+    color: #A68626;
+    font-weight: bolder;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px #11110F;
+    font-family: 'Cinzel';
+    border-bottom-left-radius: 4rem;
+    border-top-right-radius: 4rem;
+}
+
+
+
+#SweetPotato {
+    background-image: url(../images/fastfood/sweetpotato.jpg);
+    grid-area: box1;
+
+}
+
+#PotatoFries {
+    background-image: url(../images/fastfood/frise.jpg);
+    grid-area: box2;
+}
+
+#CheesBurger {
+    background-image: url(../images/fastfood/cheesburger.jpg);
+    grid-area: box3;
+}
+
+#PlaneBurger {
+    background-image: url(../images/fastfood/burger.jpg);
+    grid-area: box4;
+}
+
+#Kebab {
+    background-image: url(../images/fastfood/kebab.jpg);
+    grid-area: box5;
+}
+
+#Gyros {
+    background-image: url(../images/fastfood/gyros.jpg);
+    grid-area: box6;
+}
+
+
+
+
+
+
+/********************
+******* PHONE ********
+**********************/
+
+@media (max-width: 500px) {
+
+    .product-container {
+        grid: auto-flow / repeat(1, 1fr);
+        grid-template-rows: ;
+        grid-template-areas:
+            "box1""box2"
+            "box3""box4"
+            "box5""box6"
+    }
+
+    #SweetPotato,
+    #PotatoFries,
+    #CheesBurger,
+    #PlaneBurger,
+    #Kebab,
+    #Gyros {
+        height: 150px;
+    }
+}
+
+
+/********************
+******* TABLET  ******
+**********************/
+
+@media (min-width: 500px) and (max-width: 978px) {
+
+    .product-container {
+        grid: auto-flow / repeat(2, 1fr);
+        grid-template-rows: 2;
+        grid-template-areas:
+            "box1 box2"
+            "box3 box4"
+            "box5 box6"
+    }
+}
+
+
+/********************
+******* LAPTOP  ******
+**********************/
+
+@media (min-width: 978px) and (max-width : 1200px) {
+
+    .product-container {
+        grid: auto-flow / repeat(3, 1fr);
+        grid-template-rows: 2;
+        grid-template-areas: "box1 box2 box3"
+            "box4 box5 box6"
+
+
+    }
+}
+
+
+/********************
+******* DESKTOP ******
+**********************/
+
+@media (min-width: 1200px) {
+
+    .product-container {
+        grid: auto-flow / repeat(6, 1fr);
+        grid-template-rows: 2;
+        grid-template-areas: "box1 box2 box3 box4 box5 box6"
+
+    }
+}

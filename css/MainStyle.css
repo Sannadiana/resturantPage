@@ -1,0 +1,298 @@
+/****************
+****** LOGO *****
+*****************/
+
+.logo {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: bold;
+    color: #A68626;
+    margin-top: 0.8rem;
+    margin-left: 0.8rem;
+    white-space: nowrap;
+    display: block;
+    float: left;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+
+/******************
+****** HEADER *****
+*******************/
+
+.page-header {
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    font-family: 'Cinzel';
+    box-shadow: 1px 1px 1px #11110F;
+}
+
+.page-header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: #fff;
+    float: right;
+}
+
+.page-header li a {
+    display: block;
+    padding: 20px 20px;
+    border-right: 1px solid #f4f4f4;
+    text-decoration: none;
+}
+
+.page-header li a:hover,
+.page-header .menu-btn:hover {
+    background-color: #f4f4f4;
+}
+
+/************************
+****PREE FIX HEADER *****
+*************************/
+#header-fix {
+    height: 50px;
+}
+
+/****************
+****** MENU *****
+*****************/
+
+.page-header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+}
+
+
+/*********************
+****** MENU ICON *****
+***********************/
+
+.page-header .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+}
+
+.page-header .menu-icon .navicon {
+    background: #333;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
+}
+
+.page-header .menu-icon .navicon:before,
+.page-header .menu-icon .navicon:after {
+    background: #333;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+
+.page-header .menu-icon .navicon:before {
+    top: 5px;
+}
+
+.page-header .menu-icon .navicon:after {
+    top: -5px;
+}
+
+
+/***********************
+****** MENU BUTTON *****
+************************/
+
+.page-header .menu-btn {
+    display: none;
+}
+
+.page-header .menu-btn:checked ~ nav .menu {
+    max-height: 240px;
+    width: 100%;
+    text-align: center;
+}
+
+.page-header .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+}
+
+.main-page-header .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+}
+
+.page-header .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+}
+
+.page-header .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+}
+
+.page-header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.page-header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+}
+
+
+
+/******************************
+****** PREE FIXED HEAADER *****
+*******************************/
+
+#header-fix {
+    height: 50px;
+}
+
+
+/****************
+****** BANNER *****
+*****************/
+
+#page-banner {
+    height: 50vw;
+    min-height: 200px;
+    max-height: 500px;
+    display: block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-bottom-left-radius: 5rem;
+}
+
+#page-banner h3 {
+    background-color: #E4E4F0;
+    font-size: 1rem;
+    text-align: center;
+    padding: 0.5rem;
+    opacity: 0.8;
+    border: 1px solid rgb(210, 210, 210);
+    z-index: 2;
+    font-family: 'Cinzel';
+}
+
+
+
+/*************************
+**** PRODUCT CONTAINER****
+**************************/
+
+.product-container {
+    font-size: 3rem;
+    display: grid;
+    width: calc(100% - 50px);
+    grid-gap: 25px;
+    margin: 25px;
+    height: 100%;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 40px auto 40px;
+}
+
+.product-container article {
+    display: grid;
+    position: relative;
+    height: 100%;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+}
+
+.product-container h3 {
+    align-self: center;
+    justify-self: center;
+}
+
+
+
+
+
+/*********************
+******** FOOTER ******
+***********************/
+
+#FooterId {
+    background-color: #E4E4F0;
+    padding: 2rem;
+    text-align: center;
+    border: dotted #434341;
+    font-family: 'Cinzel';
+    border-top-right-radius: 5rem;
+
+}
+
+#contact {
+    color: #A68626;
+    font-size: 2rem;
+    text-shadow: 0 3px 3px #11110F;
+    padding: 0.8rem;
+}
+
+.info h4 {
+    font-size: 1.3rem;
+    font-weight: bolder;
+}
+
+
+/********************
+******* LAPTOP  ******
+**********************/
+
+@media (min-width: 978px) and (max-width : 1200px) {
+    .page-header li {
+        float: left;
+    }
+
+    .page-header li a {
+        padding: 20px 30px;
+    }
+
+    .page-header .menu {
+        clear: none;
+        float: right;
+        max-height: none;
+    }
+
+    .page-header .menu-icon {
+        display: none;
+    }
+
+}
+
+
+/********************
+******* DESKTOP ******
+**********************/
+
+@media (min-width: 1200px) {
+
+    .page-header li {
+        float: left;
+    }
+
+    .page-header li a {
+        padding: 20px 30px;
+    }
+
+    .page-header .menu {
+        clear: none;
+        float: right;
+        max-height: none;
+    }
+
+    .page-header .menu-icon {
+        display: none;
+    }
+
+}
