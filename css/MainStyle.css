@@ -184,6 +184,15 @@
     font-family: 'Cinzel';
 }
 
+#arrow{
+    background-color: red;
+    height: 10%;
+    width: 20%;
+    position:relative;
+    left: 50%;
+    margin-bottom: 10%;
+}
+
 
 
 /*************************
