@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/MainStyle.css">
     <link rel="stylesheet" href="css/Gourmet.css">
     <link href="https://fonts.googleapis.com/css?family=Cinzel|Rajdhani" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 
 <body>
@@ -28,8 +29,11 @@
             <a href="MainPage.html" class="logo">Tasty And Fancy</a>
             <input class="menu-btn" type="checkbox" id="menu-btn" />
             <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+
+
             <nav>
                 <ul class="menu">
+                    <li id="home"> <a href="MainPage.html"><i class="material-icons">home</i>Home</a></li>
                     <li><a href="#FooterId">Contact us</a></li>
                     <li><a href="#Book">Book table</a></li>
                     <li><a href="#TakeAway">Take away</a></li>
@@ -42,44 +46,65 @@
         <div id="header-fix"></div>
 
         <!--Start of banner and its content-->
+       
         <banner id="page-banner">
             <article>
                 <h3>Gourmet</h3>
             </article>
-            <img id="arrow" src="images/Arrow-PNG.png" alt="Grafikk of an arrow. Grafikk">
+
+            <a href="#productBox">
+                <img id="arrow" src="images/arrow-black.png" alt="Grafikk of an arrow. Grafikk">
+            </a>
         </banner>
         <!--End of banner and its content-->
 
 
 
         <!--Start of main content-->
-        <main class="product-container">
-            <a href="" id="KingPrawn">
-                <article>
-                    <h3 class="h3">King prawn<br> $200</h3>
-                </article>
-            </a>
-
-            <a href="" id="Sushi">
-                <article>
-                    <h3 class="h3">Sushi <br>$199</h3>
-                </article>
-            </a>
+        <div id="productBox">
+            <main class="product-container">
 
 
-            <a href="" id="Fish">
-                <article>
-                    <h3 class="h3">Fish dish $90</h3>
-                </article>
-            </a>
 
-            <a href="" id="TenderloinBeef">
-                <article>
-                    <h3 class="h3">Tenderloin beef <br>$100</h3>
-                </article>
-            </a>
 
-        </main>
+                <a href="" id="KingPrawn">
+                    <article>
+                        <h3 class="h3">King prawn<br> $200</h3>
+                        <img id="info" src="images/info.png" alt="Graphic information icon. Graphic">
+                        <img id="addToCart" src="images/addToCartIcon.png" alt="Graphic add to cart icon. Graphic">
+                        <img id="addToTable" src="images/addToTable.png" alt="Graphic add to booked table icon. Graphic">
+                    </article>
+                </a>
+
+                <a href="" id="Sushi">
+                    <article>
+                        <h3 class="h3">Sushi <br>$199</h3>
+                        <img id="info" src="images/info.png" alt="Graphic information icon. Graphic">
+                        <img id="addToCart" src="images/addToCartIcon.png" alt="Graphic add to cart icon. Graphic">
+                        <img id="addToTable" src="images/addToTable.png" alt="Graphic add to booked table icon. Graphic">
+                    </article>
+                </a>
+
+
+                <a href="" id="Fish">
+                    <article>
+                        <h3 class="h3">Fish dish $90</h3>
+                        <img id="info" src="images/info.png" alt="Graphic information icon. Graphic">
+                        <img id="addToCart" src="images/addToCartIcon.png" alt="Graphic add to cart icon. Graphic">
+                        <img id="addToTable" src="images/addToTable.png" alt="Graphic add to booked table icon. Graphic">
+                    </article>
+                </a>
+
+                <a href="" id="TenderloinBeef">
+                    <article>
+                        <h3 class="h3">Tenderloin beef <br>$100</h3>
+                        <img id="info" src="images/info.png" alt="Graphic information icon. Graphic">
+                        <img id="addToCart" src="images/addToCartIcon.png" alt="Graphic add to cart icon. Graphic">
+                        <img id="addToTable" src="images/addToTable.png" alt="Graphic add to booked table icon. Graphic">
+                    </article>
+                </a>
+            </main>
+        </div>
         <!--Endo of main content-->
 
 

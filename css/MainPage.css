@@ -16,8 +16,6 @@
 #Sale {
     height: 350px;
     background-size: cover;
-    color: #A68626;
-    text-shadow: 5px 5px 5px black;
     font-weight: bolder;
     cursor: pointer;
     box-shadow: 5px 5px 5px #11110F;
