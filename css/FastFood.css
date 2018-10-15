@@ -105,6 +105,7 @@
     #Kebab,
     #Gyros {
         height: 150px;
+        background-position: 50% 50%;
     }
 }
 
@@ -152,11 +153,14 @@
 
     .product-container {
         grid: auto-flow / repeat(6, 1fr);
-        grid-template-rows: 2;
-        grid-template-areas: "box1 box2 box3 box4 box5 box6"
-
+        grid-template-rows: 3;
+        grid-template-areas: 
+            "box1 box1 box1 box2 box2 box2"
+            "box3 box3 box3 box4 box4 box4" 
+            "box5 box5 box5 box6 box6 box6";
     }
-        .overlayText{
-        text-align: left;
+    #CheesBurger,#PlaneBurger{
+        background-position: 50% 50%;
     }
+    
 }
