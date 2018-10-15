@@ -43,21 +43,25 @@
 #Lasagne {
     background-image: url(../images/Sale/Lasagne.jpg);
     grid-area: box1;
+    overflow: hidden;
 }
 
 #Cacke {
     background-image: url(../images/Sale/cacke.jpg);
     grid-area: box2;
+    overflow: hidden;
 }
 
 #VegBurger {
     background-image: url(../images/Sale/vegBurger.jpg);
     grid-area: box3;
+    overflow: hidden;
 }
 
 #Chicken {
     background-image: url(../images/Sale/chickenStick.jpg);
     grid-area: box4;
+    overflow: hidden;
 }
 
 

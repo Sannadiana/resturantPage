@@ -44,32 +44,38 @@
 #SweetPotato {
     background-image: url(../images/fastfood/sweetpotato.jpg);
     grid-area: box1;
+     overflow:hidden;
 
 }
 
 #PotatoFries {
     background-image: url(../images/fastfood/frise.jpg);
     grid-area: box2;
+     overflow:hidden;
 }
 
 #CheesBurger {
     background-image: url(../images/fastfood/cheesburger.jpg);
     grid-area: box3;
+     overflow:hidden;
 }
 
 #PlaneBurger {
     background-image: url(../images/fastfood/burger.jpg);
     grid-area: box4;
+     overflow:hidden;
 }
 
 #Kebab {
     background-image: url(../images/fastfood/kebab.jpg);
     grid-area: box5;
+     overflow:hidden;
 }
 
 #Gyros {
     background-image: url(../images/fastfood/gyros.jpg);
     grid-area: box6;
+     overflow:hidden;
 }
 
 
@@ -134,6 +140,7 @@
 
 
     }
+    
 }
 
 
@@ -148,5 +155,8 @@
         grid-template-rows: 2;
         grid-template-areas: "box1 box2 box3 box4 box5 box6"
 
+    }
+        .overlayText{
+        text-align: left;
     }
 }

@@ -26,7 +26,7 @@
     background-color: #fff;
     position: fixed;
     width: 100%;
-    z-index: 3;
+    z-index: 10;
     font-family: 'Cinzel';
     box-shadow: 1px 1px 1px #11110F;
 }
@@ -38,6 +38,7 @@
     overflow: hidden;
     background-color: #fff;
     float: right;
+    border-radius: 3rem;
 }
 
 .page-header li a {
@@ -45,20 +46,28 @@
     padding: 20px 20px;
     border-right: 1px solid #f4f4f4;
     text-decoration: none;
+    color: #11110F;
+    background-color: #fff;
+    border-radius: 2rem;
 }
 
 
 .page-header li a:hover,
 .page-header .menu-btn:hover {
-    background-color: #f4f4f4;
+    background-color: #11110F;
+    color: #f4f4f4;
 }
+
 
 /************************
 ****PREE FIX HEADER *****
 *************************/
+
 #header-fix {
     height: 50px;
 }
+
+
 
 /****************
 ****** MENU *****
@@ -69,6 +78,7 @@
     max-height: 0;
     transition: max-height .2s ease-out;
 }
+
 
 
 /*********************
@@ -111,6 +121,8 @@
 .page-header .menu-icon .navicon:after {
     top: -5px;
 }
+
+
 
 
 /***********************
@@ -172,6 +184,7 @@
     background-size: cover;
     background-position: center;
     border-bottom-left-radius: 5rem;
+    position: relative;
 }
 
 #page-banner h3 {
@@ -190,11 +203,15 @@
 ****** ANIMATION ARROW *****
 ****************************/
 #arrow {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#arrow img {
     height: 20%;
-    width: 20%;
-    position: relative;
-    margin-left: 50%;
-    margin-top: 30%;
+    width: 100px;
     animation: arrowMove 1s infinite alternate;
     animation-timing-function: ;
 }
@@ -217,6 +234,7 @@
 **************************/
 
 .product-container {
+
     font-size: 2rem;
     display: grid;
     width: calc(100% - 50px);
@@ -228,6 +246,7 @@
 }
 
 .product-container article {
+
     display: grid;
     position: relative;
     height: 100%;
@@ -243,13 +262,20 @@
     opacity: 0.8;
     padding: 1rem;
     border-radius: 3rem;
+    text-decoration: none;
 }
 
 .product-container img {
     height: 15%;
 }
 
-.product-container #info {
+
+
+/*********************
+******** ICONES ******
+***********************/
+
+.product-container .info {
     align-self: center;
     justify-self: center;
     position: absolute;
@@ -259,6 +285,15 @@
     background-color: #000000;
     opacity: 0.8;
     border-radius: 3rem;
+    z-index: 5;
+}
+
+.info:hover ~ .overlay {
+    opacity: 1;
+}
+
+.info:hover {
+    opacity: 0 !important;
 }
 
 .product-container #addToCart {
@@ -280,6 +315,51 @@
     border-radius: 3rem;
     box-shadow: 2px 2px 2px 2px #000000;
 }
+
+/*********************
+******** ICONES functions ******
+***********************/
+
+
+
+.overlay {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    transition: .5s ease;
+
+}
+
+
+
+.overlayText {
+    width: 100%;
+    height: 100%;
+    background-color: #E4E4F0;
+    display: block;
+    color: #11110F;
+    font-size: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1;
+}
+
+.overlayText-text {
+    padding: 2em;
+}
+
+/* #addToCart,
+    #addToTable*/
 
 /*********************
 ******** FOOTER ******
@@ -320,7 +400,7 @@
 
 @media (max-width: 500px) {
 
-    #info,
+    .info,
     #addToCart,
     #addToTable {
         display: none;
@@ -379,7 +459,6 @@
 
     }
 
-
 }
 
 
@@ -410,5 +489,6 @@
     #home {
         display: none;
     }
+
 
 }

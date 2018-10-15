@@ -45,23 +45,27 @@
 
 
 #KingPrawn {
+    overflow:hidden;
     background-image: url(../images/gourmet/kingPrawn.jpg);
     grid-area: box1;
 }
 
 #Sushi {
+    overflow:hidden;
     background-image: url(../images/gourmet/Sushi.jpg);
     grid-area: box2;
 
 }
 
 #Fish {
+    overflow:hidden;
     background-image: url(../images/gourmet/fish.jpg);
     grid-area: box3;
 
 }
 
 #TenderloinBeef {
+    overflow:hidden;
     background-image: url(../images/gourmet/tenderloin%20Beef.jpg);
     grid-area: box4;
 
