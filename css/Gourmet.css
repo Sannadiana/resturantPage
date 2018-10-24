@@ -17,7 +17,7 @@
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: 2;
     grid-template-areas: "box1 box2 box3"
-        "box4 box4 box4"    
+        "box4 box4 box4"
 }
 
 
@@ -45,27 +45,27 @@
 
 
 #KingPrawn {
-    overflow:hidden;
+    overflow: hidden;
     background-image: url(../images/gourmet/kingPrawn.jpg);
     grid-area: box1;
 }
 
 #Sushi {
-    overflow:hidden;
+    overflow: hidden;
     background-image: url(../images/gourmet/Sushi.jpg);
     grid-area: box2;
 
 }
 
 #Fish {
-    overflow:hidden;
+    overflow: hidden;
     background-image: url(../images/gourmet/fish.jpg);
     grid-area: box3;
 
 }
 
 #TenderloinBeef {
-    overflow:hidden;
+    overflow: hidden;
     background-image: url(../images/gourmet/tenderloin%20Beef.jpg);
     grid-area: box4;
 
@@ -129,8 +129,22 @@
         grid-template-rows: 2;
         grid-template-areas: "box1 box2 box3"
             "box4 box4 box4"
+    }
 
+    .addtoCartText {
+        /*left: 40%;*/
+    }
 
+    .addToTableText {
+        /*right: 40%;*/
+    }
+    
+        .addtoCartText {
+        /*left: 30%;*/
+    }
+
+    .addToTableText {
+        /*right: 30%;*/
     }
 }
 
@@ -146,8 +160,13 @@
         grid-template-rows: 2;
         grid-template-areas: "box4 box4 box4"
             "box1 box2 box3"
-
     }
 
+    .addtoCartText {
+        /*left: 35%;*/
+    }
 
+    .addToTableText {
+        /*right: 35%;*/
+    }
 }

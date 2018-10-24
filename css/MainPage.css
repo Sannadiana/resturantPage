@@ -7,6 +7,7 @@
 }
 
 
+
 /*************************
 **** PRODUCT CATEGORIES****
 **************************/
@@ -22,7 +23,7 @@
     font-family: 'Cinzel';
     border-bottom-left-radius: 4rem;
     border-top-right-radius: 4rem;
-    
+
 }
 
 
@@ -30,9 +31,11 @@
 **** PRODUCT CONTAINER****
 **************************/
 
+
 .product-container {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: "BoxGourmet BoxFastfood BoxSale"
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "g f s"
+
 }
 
 
@@ -53,6 +56,7 @@
     background-image: url(../images/Sale/Fruts.jpg);
     grid-area: s;
 }
+
 
 
 
@@ -116,7 +120,11 @@
     #Sale {
         height: 750px;
     }
-
+    
+    #FastFood,
+    #Sale{
+        background-position: 30% 50%;
+    }
 
 }
 
@@ -129,6 +137,7 @@
 
     .product-container {
         grid: auto-flow / repeat(2, 1fr);
+        grid-template-rows: 2;
         grid-template-areas: "g g"
             "f s"
     }
@@ -138,5 +147,10 @@
     #Sale {
         height: 350px;
     }
-
+    
+    #Gourmet{
+        background-position: 50% 60%;
+    }
 }
+    
+

@@ -265,7 +265,7 @@
 }
 
 .product-container img {
-    height: 15%;
+    width: 50px;
 }
 
 
@@ -351,10 +351,22 @@
 ******** ADD TO CART ICON **********
 ************************************/
 
-.addtoCart {
+.bottom-icons{
     position: absolute;
-    right: 6%;
-    bottom: 3%;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+}
+
+.cart-class, .table-class{
+    width: 50%;
+    float: right;
+} 
+
+.addtoCart {
+    margin-bottom: 10px;
+    margin-right: 10px; 
+    float: right; 
     background-color: #E4E4F0;
     opacity: 0.8;
     border-radius: 3rem;
@@ -363,17 +375,17 @@
 }
 
 .addtoCartText {
+    position: absolute;
+    width: 100px;
+    height: 15px;
+    padding-top: 5px;
     visibility: hidden;
     color: #fff;
     font-size: 0.8rem;
-    border-radius: 0.5rem;
-    padding: 0;
-    position: relative;
-    top: -300%;
-    left: 35%;
+    border-radius: 10px;
     background-color: #11110F;
-    height: 2%;
-    width: 10%;
+    right: 0;
+    top: -30px;
 }
 
 
@@ -397,31 +409,30 @@
 ******** ADD TO TABLE ICON **********
 ************************************/
 .addToTable {
-    position: absolute;
     bottom: 3%;
     opacity: 0.8;
     border-radius: 3rem;
     box-shadow: 2px 2px 2px 2px #000000;
     z-index: 1;
-    position: absolute;
-    left: 6%;
-    bottom: 3%;
+    margin-bottom: 10px;
+    margin-left: 20px;
     background-color: #000000;
     opacity: 0.8;
+    float: left;
 }
 
 .addToTableText {
+    position: absolute;
+    width: 100px;
+    height: 15px;
+    padding-top: 5px;
     visibility: hidden;
     color: #fff;
     font-size: 0.8rem;
     border-radius: 0.5rem;
-    padding: 0;
-    position: relative;
-    top: -400%;
-    right: 35%;
     background-color: #11110F;
-    height: 2%;
-    width: 10%;
+    left: 0;
+    top: -30px;
 }
 
 
